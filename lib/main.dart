@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+import 'Screens/home_page.dart';
+
+
+void main() {
+  runApp(const LandingPage());
+}
+
+class LandingPage extends StatelessWidget {
+  const LandingPage({super.key});
+
+  
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+     
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        backgroundColor: Colors.grey,
+        body: HomePage(),
+      ) ,
+    );
+  }
+}
+
+
+
